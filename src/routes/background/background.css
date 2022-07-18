@@ -1,0 +1,87 @@
+.wrap {
+    display: inline-block;
+    width: 100%;
+    height: 960px;
+    float: left;
+    overflow: hidden;
+  }
+.image {
+  background-image: url('../../../assets/에곤쉴레1.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+.bg {
+  positon: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+}
+@-webkit-keyframes zoom-a {
+    0% { background-size: 100% auto; }
+    100% { background-size: 120% auto; }
+}
+@-moz-keyframes zoom-a {
+    0% { background-size: 100% auto; }
+    100% { background-size: 120% auto; }
+}
+@-o-keyframes zoom-a {
+    0% { background-size: 100% auto; }
+    100% { background-size: 120% auto; }
+}
+@keyframes zoom-a {
+    0% { background-size: 100% auto; }
+    100% { background-size: 120% auto; }
+}
+.type-a {
+  -webkit-animation: zoom-a 10s linear infinite alternate; /* Safari 4+ */
+  -moz-animation:    zoom-a 10s linear infinite alternate; /* Fx 5+ */
+  -o-animation:      zoom-a 10s linear infinite alternate; /* Opera 12+ */
+  animation:         zoom-a 10s linear infinite alternate; /* IE 10+, Fx 29+ */
+}
+@-webkit-keyframes zoom-b {
+    0% {
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1) translateZ(1px);
+  }
+    100% {
+    -ms-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2) translateZ(1px);
+  }
+}
+@-moz-keyframes zoom-b {
+    0% {
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1) translateZ(1px);
+  }
+    100% {
+    -ms-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2) translateZ(1px);
+  }
+}
+@-o-keyframes zoom-b {
+    0% {
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1) translateZ(1px);
+  }
+    100% {
+    -ms-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2) translateZ(1px);
+  }
+}
+@keyframes zoom-b {
+    0% {
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1) translateZ(1px);
+  }
+    100% {
+    -ms-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2) translateZ(1px);
+  }
+}
+.type-b {
+  -webkit-animation: zoom-b 10s linear infinite alternate; /* Safari 4+ */
+  -moz-animation:    zoom-b 10s linear infinite alternate; /* Fx 5+ */
+  -o-animation:      zoom-b 10s linear infinite alternate; /* Opera 12+ */
+  animation:         zoom-b 10s linear infinite alternate; /* IE 10+, Fx 29+ */
+}
