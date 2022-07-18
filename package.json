@@ -6,6 +6,7 @@
   "repository": "https://github.com/Ksanbal/electron-example.git",
   "author": "ksanbal <dev.ksanbal@gmail.com>",
   "license": "MIT",
+  "type": "commonjs",
   "scripts": {
     "start": "electron .",
     "deploy": "electron-builder",
