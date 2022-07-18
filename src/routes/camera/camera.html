@@ -2,12 +2,25 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="img-src 'self' data:; default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self"
+    />
     <title>Hello World!</title>
   </head>
   <body>
     <h1>Camera!</h1>
+    <!-- Live webcam -->
+    <h2>Live cam</h2>
     <video autoplay id="camera"></video>
-    <script src="./camera.js"></script>
-    <button>Capture IMG</button>
+    <!-- Capture Image -->
+    <h2>Capture image</h2>
+    <button id="capture-btn">Capture Image</button>
+    <img id="capture-img" alt="Plz capture img" />
   </body>
+  <script src="./camera.js"></script>
 </html>
