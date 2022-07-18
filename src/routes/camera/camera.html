@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta
       http-equiv="Content-Security-Policy"
-      content="img-src 'self' data:; default-src 'self'; script-src 'self'"
+      content="img-src 'self' data:; default-src 'self'; script-src 'self' 'unsafe-inline' "
     />
     <meta
       http-equiv="X-Content-Security-Policy"
@@ -20,8 +20,8 @@
     <video autoplay id="camera"></video>
     <!-- Capture Image -->
     <h2>Capture image</h2>
-    <button id="capture-btn">Capture Image</button>
-    <button id="save-btn">Save Image</button><br />
+    <button onclick="captureImg()">Capture Image</button>
+    <button onclick="saveImg()">Save Image</button><br />
     <img id="capture-img" alt="Plz capture img" />
   </body>
   <script src="./camera.js"></script>

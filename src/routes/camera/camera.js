@@ -5,9 +5,9 @@ navigator.mediaDevices.getUserMedia({ video: true }).then((stream) => {
 });
 
 // caputre button
-const caputreImg = document.getElementById("capture-img");
-const captureBtn = document.getElementById("capture-btn");
-captureBtn.addEventListener("click", () => {
+function captureImg() {
+  const image = document.getElementById("capture-img");
+
   const canvas = document.createElement("canvas");
   canvas.width = video.videoWidth;
   canvas.height = video.videoHeight;
@@ -16,15 +16,15 @@ captureBtn.addEventListener("click", () => {
   const dataURL = canvas.toDataURL();
 
   // 이미지 미리보기
-  caputreImg.src = dataURL;
-});
+  image.src = dataURL;
+}
 
 // save button
-const saveBtn = document.getElementById("save-btn");
-saveBtn.addEventListener("click", () => {
-  if (caputreImg.src) {
+function saveImg() {
+  const image = document.getElementById("capture-img");
+  if (image.src) {
     const filename = Date.now();
-    const base64Data = caputreImg.src.split(",")[1];
+    const base64Data = image.src.split(",")[1];
 
     const fs = require("fs");
     // media 폴더가 없다면 생성
@@ -40,4 +40,4 @@ saveBtn.addEventListener("click", () => {
   } else {
     alert("사진을 먼저 찍어주세요");
   }
-});
+}
